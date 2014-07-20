@@ -2,6 +2,7 @@ Moondocker
 ======
 
 Project goals: 
+
 1. Deploy Docker engine on Moonshot servers using OpenStack Nova Bare-metal and/or Ironic drivers
 
 2. Deploy Docker Containers on Moonshot servers using OpenStack Heat
