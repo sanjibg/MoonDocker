@@ -15,8 +15,8 @@ Brings up an stack named dockerstack using the following parameters:
 3. image_id = Image to used for provisioning an instance on which docker will be installed
 4. docker_image = Image to be pulled from docker repository to create the container
 
-Hot Template (docker.yaml)
-==========================================================
+Hot Template (docker.yaml):
+
 heat_template_version: 2013-05-23
 description: Single compute instance running a Docker container.
 parameters:
@@ -270,4 +270,3 @@ resources:
             params:
                 host: { get_attr: [my_instance, first_address] }
       image: {get_param: docker_image}
-===========================================================================
