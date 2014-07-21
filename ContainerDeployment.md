@@ -10,13 +10,15 @@ PHP Container Deployment With Docker Tutorial by Shovik
 
 2. Start a Docker daemon
             
-        $ docker -d &
+        $ sudo docker -d &
 
 3. Clone the Github project tutum-docker-php
 
+        $ sudo git clone https://github.com/sanjibg/tutum-docker-php.git 
+
 4. Build the Docker image
 
-        $ docker build -t sanjibg/tutum-docker-php .
+        $ sudo docker build -t sanjibg/tutum-docker-php .
         
 5. Push the newly built image to the Docker registry
 
@@ -28,7 +30,7 @@ PHP Container Deployment With Docker Tutorial by Shovik
         
 7. Build and the run the docker image
 
-        $ docker run -d -p 80:80 apache-php
+        $ sudo docker run -d -p 80:80 apache-php
 
 8. Verfiy that the container is running correcty by going to a web browser and going to https://localhost:80
         
