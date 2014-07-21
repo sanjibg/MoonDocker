@@ -8,21 +8,20 @@ PHP Container Deployment With Docker Tutorial
         $ sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
         $ sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
 
-2. Install apache and php
-
-    For apache:
-    
-        sudo apt-get update
-        sudo apt-get install apache2
-        
-    For PHP:
-        
-        sudo apt-get install php5 libapache2-mod-php5
-
 2. Start a docker dameon
             
-        docker -d &
+        $ docker -d &
 
 3. Download the Github project tutum-docker-php under username sanjibg
 
-4. Follow the instructions on the README.md file there.
+4. Build the doker image
+
+        $ docker build -t sanjibg/tutum-docker-php .
+        
+5. Run the docker container
+
+        $ docker run -d -p 80:80 tutum/tutum-docker-php
+        
+6. Push the mewly built image to a docker registry
+
+        
