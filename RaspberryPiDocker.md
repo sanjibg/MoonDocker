@@ -1,4 +1,4 @@
-Deploying Docker on a Raspberry Pi
+Deploying Docker on Raspberry Pi
 ==================================
 
 1. Download Arch Linux for Raspberry Pi here: http://archlinuxarm.org/platforms/armv6/raspberry-pi and flash onto the SD card for your Raspberry Pi
