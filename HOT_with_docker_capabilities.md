@@ -2,6 +2,7 @@ Heat orchestration template with docker capabilities
 ================================================
 
 The below Template can be used to deploy an container onto an instance.
+The template has been written and tested mainly for ubuntu OS.
 This template has the following instructions:
 1. setup proxy and install docker. 
 2. Pull the docker image provided as a parameter at the point of creating the stack
