@@ -18,10 +18,22 @@ PHP Container Deployment With Docker Tutorial
 
         $ docker build -t sanjibg/tutum-docker-php .
         
-5. Run the docker container
+5. Run the docker image
 
-        $ docker run -d -p 80:80 tutum/tutum-docker-php
+        $ docker run -d -p 80:80 sanjibg/tutum-docker-php
         
-6. Push the mewly built image to a docker registry
+6. Push the newly built image to a docker registry
 
+        $ sudo docker push username/nameOfImage
+        
+7. Pull a docker image from a registry
+
+        $ sudo docker pull imageName
+        
+8. Build and the run the docker image as before
+
+        $ docker build -t sanjibg/tutum-docker-php .
+        $ docker run -d -p 80:80 sanjibg/tutum-docker-php
+
+9. Verfiy that the container is running correcty by going to a web browser and going to https://localhost:80
         
