@@ -1,4 +1,4 @@
-PHP Container Deployment With Docker Tutorial
+PHP Container Deployment With Docker
 =============================================
 
 1. Go to https://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit and install Docker
