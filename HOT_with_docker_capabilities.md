@@ -4,17 +4,25 @@ Heat orchestration template with docker capabilities
 The below Template can be used to deploy an container onto an instance.
 The template has been written and tested mainly for ubuntu OS.
 This template has the following instructions:
+
 1. setup proxy and install docker. 
+
 2. Pull the docker image provided as a parameter at the point of creating the stack
+
 3. Use the docker plugin to create an container using the Image that was pulled.
 
 Ex: heat  stack-create dockerstack -f docker.yaml -P random_key_name=heat_key -P image_id=trusty-image -P docker_image=cirros -P baremetal_flavor=baremetal
 
 Brings up an stack named dockerstack using the following parameters:
+
 1. random_key_name = key pair to be used for the instance
+
 2. baremetal_flavor = flavor to be used for provisioning the instance
+
 3. image_id = Image to used for provisioning an instance on which docker will be installed
+
 4. docker_image = Image to be pulled from docker repository to create the container
+
 
 Hot Template (docker.yaml):
 ```
