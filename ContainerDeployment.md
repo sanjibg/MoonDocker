@@ -1,4 +1,4 @@
-PHP Container Deployment With Docker
+Deploying PHP Container with Docker
 =============================================
 
 1. Go to https://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit and install Docker
@@ -33,5 +33,5 @@ PHP Container Deployment With Docker
 
         $ sudo docker run -d -p 80:80 apache-php
 
-8. Verfiy that the container is running correcty by going to a web browser and going to https://localhost:80
+8. Verfiy that the container is running correcty by going to a web browser and going to http://localhost:80
         
