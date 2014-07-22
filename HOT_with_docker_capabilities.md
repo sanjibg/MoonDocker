@@ -1,5 +1,5 @@
-Heat orchestration template with docker capabilities
-================================================
+Heat template to set up Docker environment and deploy Docker container
+======================================================================
 
 The Heat template below can be used to deploy a Docker container onto an instance.
 The template has mainly been written for, and tested on, Ubuntu OS.
