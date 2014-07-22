@@ -23,4 +23,6 @@ Once you have Heat environment that is successfully provisioning instances, foll
 
         # service heat-engine restart
         
-Docker plugin can now be used with Heat.
+Docker plugin is now enabled with Heat.
+
+This plugin now enables using Docker containers as resources in a Heat template

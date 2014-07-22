@@ -25,7 +25,9 @@ Brings up an stack named dockerstack using the following parameters:
 
 
 HOT Template (docker.yaml):
+
 NOTE: While using the template, edit the proxy details that needs to be used in your environment.
+
 ```
     heat_template_version: 2013-05-23
     description: Single compute instance running a Docker container.
