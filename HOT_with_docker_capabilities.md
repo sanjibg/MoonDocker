@@ -1,7 +1,7 @@
 Heat orchestration template with docker capabilities
 ================================================
 
-The Heat template beloe can be used to deploy a Docker container onto an instance.
+The Heat template below can be used to deploy a Docker container onto an instance.
 The template has mainly been written for, and tested on, Ubuntu OS.
 This template has the following instructions:
 
