@@ -1,12 +1,13 @@
 How to setup an environment to deploy Docker containers using Heat?
 ==================================
 
-Once you have Heat environment that is provisioning instances, follow these steps to use docker plugin for Heat:
+
+Once you have Heat environment that is successfully provisioning instances, follow these steps to enable docker plugin in Heat to deploy containers as resources in a Heat template.
 
 1. Goto heat/contrib/docker and run the following command to install docker plugin dependencies:
 
         # pip install -r requirements.txt
-        # (if you are running Heat in an venv then run it after activating the venv)
+        # (if you are running Heat in an venv, activate the venv before running the above command)
 
 2. Run the following commands to complete docker plugin setup for Heat:
 

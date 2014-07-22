@@ -15,16 +15,17 @@ Example: heat  stack-create dockerstack -f docker.yaml -P random_key_name=heat_k
 
 Brings up an stack named dockerstack using the following parameters:
 
-1. random_key_name = key pair to be used for the instance
+1. random_key_name = key-pair to be used for the instance
 
 2. baremetal_flavor = flavor to be used for provisioning the instance
 
-3. image_id = Image to used for provisioning an instance on which docker will be installed
+3. image_id = Image to be used for provisioning an instance on which docker will be installed. This image should have heat-cfntools enabled using DIB
 
 4. docker_image = Image to be pulled from docker repository to create the container
 
 
-Hot Template (docker.yaml):
+HOT Template (docker.yaml):
+NOTE: While using the template, edit the proxy details that needs to be used in your environment.
 ```
     heat_template_version: 2013-05-23
     description: Single compute instance running a Docker container.
@@ -52,8 +53,8 @@ Hot Template (docker.yaml):
 
                 set -e
                 touch /root/docker_script_started_marker
-                # set proxy details
                 # dhclient eth1
+                # set proxy details here. If the instance is not behind proxy, comment it.
                 export http_proxy="http://10.1.192.43:8080"
                 export https_proxy="http://10.1.192.43:8080"
                 export no_proxy=localhost,127.0.0.1
