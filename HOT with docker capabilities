@@ -1,0 +1,23 @@
+How to setup an environment to deploy docker containers using Heat?
+
+https://github.com/openstack/heat/tree/master/contrib/docker/docker
+has a bug, so please also refer
+https://ask.openstack.org/en/question/33963/running-docker-on-devstack/
+
+Once you have Heat environment that is provisioning instances, follow these steps:
+
+Goto heat/contrib/docker and run:
+pip install -r requirements.txt
+(if you are running Heat in an venv then run it after activating the venv)
+
+Also run the following commands:
+mkdir /usr/lib/heat;
+cd /opt/stack/heat/contrib/docker;
+ln -sf $(cd docker/resources; pwd) /usr/lib/heat/docker;
+
+In heat.conf add the following:
+plugin_dirs=/opt/stack/heat/contrib/docker/docker/resources
+
+
+restart heat-engine:
+service heat-engine restart
